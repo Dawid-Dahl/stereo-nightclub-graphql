@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "943a1925f2676e5295be9be58d59d3e7",
+    "content-hash": "410fe7c7de537f10b742abbf5edf8666",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -5030,6 +5030,46 @@
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
+            "name": "silverstripe/graphql-devtools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-graphql-devtools.git",
+                "reference": "a71a48fd5c5070992f165e9c50caee4ef9eb9cd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-graphql-devtools/zipball/a71a48fd5c5070992f165e9c50caee4ef9eb9cd2",
+                "reference": "a71a48fd5c5070992f165e9c50caee4ef9eb9cd2",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/graphql": "*"
+            },
+            "default-branch": true,
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "expose": [
+                    "client/"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\GraphQLDevTools\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Tools to help developers building new applications on SilverStripe’s GraphQL API",
+            "support": {
+                "issues": "https://github.com/silverstripe/silverstripe-graphql-devtools/issues",
+                "source": "https://github.com/silverstripe/silverstripe-graphql-devtools/tree/master"
+            },
+            "time": "2021-03-31T03:38:04+00:00"
+        },
+        {
             "name": "sminnee/phpunit",
             "version": "5.7.29",
             "source": {
@@ -5248,7 +5288,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/recipe-cms": 0,
-        "silverstripe/login-forms": 0
+        "silverstripe/login-forms": 0,
+        "silverstripe/graphql-devtools": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

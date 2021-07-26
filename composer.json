@@ -11,7 +11,9 @@
     },
     "require-dev": {
         "sminnee/phpunit": "^5.7",
-        "sminnee/phpunit-mock-objects": "^3.4.5"
+        "sminnee/phpunit-mock-objects": "^3.4.5",
+        "silverstripe/graphql": "^3.5",
+        "silverstripe/graphql-devtools": "1.x-dev"
     },
     "extra": {
         "resources-dir": "_resources",

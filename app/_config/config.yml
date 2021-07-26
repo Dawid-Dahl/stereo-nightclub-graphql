@@ -1,3 +1,11 @@
 SilverStripe\Control\Director:
     rules:
         "graphql": '%$SilverStripe\GraphQL\Controller.default'
+SilverStripe\GraphQL\Manager:
+    schemas:
+        default:
+            types:
+                drink: 'SilverStripe\StereoNightclub\GraphQL\DrinkTypeCreator'
+                ingredient: 'SilverStripe\StereoNightclub\GraphQL\IngredientTypeCreator'
+            queries:
+                readDrinks: 'SilverStripe\StereoNightclub\GraphQL\ReadDrinkQueryCreator'

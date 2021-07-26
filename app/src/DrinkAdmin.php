@@ -1,6 +1,6 @@
 <?php
 
-namespace Guide\GraphQL;
+namespace SilverStripe\StereoNightclub;
 
 use SilverStripe\StereoNightclub\Drink;
 use SilverStripe\StereoNightclub\Ingredient;

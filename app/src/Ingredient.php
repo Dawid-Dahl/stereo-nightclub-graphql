@@ -17,7 +17,7 @@ class Ingredient extends DataObject
 
     private static $db = [
         'Title' => 'Varchar',
-        'Price' => 'Int',
+        'Price' => 'Currency',
     ];
 
     private static $belongs_many_many = [
@@ -26,7 +26,23 @@ class Ingredient extends DataObject
 
     private static $table_name = "Ingredient";
 
+    private static $summary_fields = [
+        "Title" => "Title",
+        "Price" => "Price",
+    ];
+
     public function getCMSfields()
     {
+        $fields = FieldList::create(TabSet::create("Root"));
+
+        $fields->addFieldsToTab(
+            "Root.Main",
+            [
+                TextField::create("Title"),
+                CurrencyField::create("Price", "Price (per ingredient)"),
+            ]
+        );
+
+        return $fields;
     }
 }

@@ -9,9 +9,10 @@ use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\CurrencyField;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Forms\CheckboxSetField;
 use SilverStripe\ORM\ArrayLib;
-use SilverStripe\Assets\Image;
 use SilverStripe\Forms\TabSet;
+use SilverStripe\Forms\TextareaField;
 
 class Drink extends DataObject
 {
@@ -20,8 +21,7 @@ class Drink extends DataObject
         'Title' => 'Varchar',
         'Description' => 'HTMLText',
         'Image' => 'Varchar',
-        'Price' => 'Int',
-        'FeaturedOnHomepage' => 'Boolean'
+        'Price' => 'Currency',
     ];
 
     /* private static $has_one = [
@@ -36,5 +36,23 @@ class Drink extends DataObject
 
     public function getCMSfields()
     {
+        $fields = FieldList::create(TabSet::create("Root"));
+
+        $fields->addFieldsToTab(
+            "Root.Main",
+            [
+                TextField::create("Title"),
+                TextareaField::create("Description"),
+                TextField::create("Image"),
+                CurrencyField::create("Price", "Price (per drink)"),
+                CheckboxSetField::create(
+                    'Ingredients',
+                    'Selected ingredients',
+                    Ingredient::get()->map()
+                )
+            ]
+        );
+
+        return $fields;
     }
 }

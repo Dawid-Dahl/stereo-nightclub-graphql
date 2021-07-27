@@ -1,3 +1,3 @@
 # stereo-nightclub-graphql
 
-GraphQL API For Stereo Nightclub Project
+SilverStripe GraphQL API For Stereo Nightclub Project

@@ -39,7 +39,8 @@ class DrinkTypeCreator extends TypeCreator
                     return $ingredientsConnection->resolveList(
                         $object->Ingredients(),
                         $args,
-                        $context
+                        $context,
+                        $info
                     );
                 }
             ]

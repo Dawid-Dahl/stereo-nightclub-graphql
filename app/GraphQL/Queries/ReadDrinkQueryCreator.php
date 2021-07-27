@@ -17,12 +17,12 @@ class ReadDrinkQueryCreator extends QueryCreator implements OperationResolver
         ];
     }
 
-    /* public function args()
+    public function args()
     {
         return [
-            'Email' => ['type' => Type::string()]
+            'ID' => ['type' => Type::int()]
         ];
-    } */
+    }
 
     public function type()
     {
@@ -32,6 +32,10 @@ class ReadDrinkQueryCreator extends QueryCreator implements OperationResolver
     public function resolve($object, array $args, $context, ResolveInfo $info)
     {
         $drinks = Drink::get();
+
+        if (isset($args["ID"])) {
+            return $drinks->byID($args["ID"]);
+        }
 
         return $drinks;
     }

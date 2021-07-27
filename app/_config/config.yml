@@ -9,3 +9,4 @@ SilverStripe\GraphQL\Manager:
                 ingredient: 'SilverStripe\StereoNightclub\GraphQL\IngredientTypeCreator'
             queries:
                 readDrinks: 'SilverStripe\StereoNightclub\GraphQL\ReadDrinkQueryCreator'
+                readIngredients: 'SilverStripe\StereoNightclub\GraphQL\ReadIngredientsQueryCreator'

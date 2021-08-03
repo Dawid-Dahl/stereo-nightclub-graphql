@@ -16,3 +16,4 @@ SilverStripe\GraphQL\Manager:
 SilverStripe\GraphQL\Controller:
     cors:
         Enabled: true
+        Allow-Origin: "*"

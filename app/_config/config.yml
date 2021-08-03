@@ -12,3 +12,7 @@ SilverStripe\GraphQL\Manager:
                 readDrink: 'SilverStripe\StereoNightclub\GraphQL\ReadDrinkQueryCreator'
                 readDrinks: 'SilverStripe\StereoNightclub\GraphQL\ReadDrinksQueryCreator'
                 readIngredients: 'SilverStripe\StereoNightclub\GraphQL\ReadIngredientsQueryCreator'
+
+SilverStripe\GraphQL\Controller:
+    cors:
+        Enabled: false

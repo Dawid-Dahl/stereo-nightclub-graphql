@@ -19,5 +19,5 @@ SilverStripe\GraphQL\Controller:
         Allow-Origin: "*"
         Allow-Headers: "Authorization, Content-Type"
         Allow-Methods: "GET, POST, OPTIONS"
-        Allow-Credentials: "true"
+        Allow-Credentials: true
         Max-Age: 600 # 600 seconds = 10 minutes.

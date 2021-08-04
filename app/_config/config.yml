@@ -19,6 +19,7 @@ SilverStripe\GraphQL\Controller:
         Allow-Origin:
             - "https://stereo-nightclub-nuxt-client.herokuapp.com"
             - "http://localhost:8888"
+            - "http://localhost:3000"
         Allow-Headers: "Authorization, Content-Type"
         Allow-Methods: "GET, POST, OPTIONS"
         Max-Age: 600 # 600 seconds = 10 minutes.

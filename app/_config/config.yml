@@ -1,6 +1,6 @@
 SilverStripe\Control\Director:
     rules:
-        "graphql": '%$SilverStripe\GraphQL\Controller.default'
+        'graphql': '%$SilverStripe\GraphQL\Controller.default'
 
 SilverStripe\GraphQL\Manager:
     schemas:
@@ -16,8 +16,8 @@ SilverStripe\GraphQL\Manager:
 SilverStripe\GraphQL\Controller:
     cors:
         Enabled: true
-        Allow-Origin: "*"
-        Allow-Headers: "Authorization, Content-Type, x-csrf-token"
-        Allow-Methods: "GET, POST, OPTIONS"
-        Allow-Credentials: "true"
+        Allow-Origin: '*'
+        Allow-Headers: 'Authorization, Content-Type, x-csrf-token'
+        Allow-Methods: 'GET, POST, OPTIONS'
+        Allow-Credentials: 'true'
         Max-Age: 600 # 600 seconds = 10 minutes.

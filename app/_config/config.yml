@@ -17,7 +17,7 @@ SilverStripe\GraphQL\Controller:
     cors:
         Enabled: true
         Allow-Origin: "*"
-        Allow-Headers: "Authorization, Content-Type"
+        Allow-Headers: "Authorization, Content-Type, X-CSRF-TOKEN"
         Allow-Methods: "GET, POST, OPTIONS"
         Allow-Credentials: "true"
         Max-Age: 600 # 600 seconds = 10 minutes.

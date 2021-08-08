@@ -19,7 +19,7 @@ SilverStripe\GraphQL\Controller:
         Allow-Origin: 
             - 'http://localhost:3000'
             - 'http://localhost:8888'
-            - 'https://stereo-nightclub-nuxt-client.herokuapp.com'
+            - 'https://stereo-nightclub-nuxt-client.herokuapp.com/'
         Allow-Headers: 'Authorization, Content-Type'
         Allow-Methods: 'GET, POST, OPTIONS'
         Allow-Credentials: 'true'

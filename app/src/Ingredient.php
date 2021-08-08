@@ -31,6 +31,11 @@ class Ingredient extends DataObject
         "Price" => "Price",
     ];
 
+    public function canView($member = null)
+    {
+        return true;
+    }
+
     public function getCMSfields()
     {
         $fields = FieldList::create(TabSet::create("Root"));

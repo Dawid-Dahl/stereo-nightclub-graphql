@@ -20,6 +20,6 @@ SilverStripe\GraphQL\Controller:
             - 'http://localhost:3000'
             - 'http://localhost:8888'
             - 'https://stereo-nightclub-nuxt-client.herokuapp.com'
-        Allow-Headers: 'Authorization, Content-Type'
+        Allow-Headers: 'Authorization, Content-Type, X-CSRF-TOKEN'
         Allow-Methods: 'GET, POST, OPTIONS'
         Allow-Credentials: 'true'

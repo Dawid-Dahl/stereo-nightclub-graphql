@@ -23,3 +23,10 @@ SilverStripe\GraphQL\Controller:
         Allow-Headers: 'Authorization, Content-Type, X-CSRF-TOKEN'
         Allow-Methods: 'GET, POST, OPTIONS'
         Allow-Credentials: 'true'
+
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\GraphQL\QueryHandler\QueryHandlerInterface.default:
+    class: SilverStripe\GraphQL\QueryHandler\QueryHandler
+    properties:
+      Middlewares:
+        csrf: false

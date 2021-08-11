@@ -1,8 +1,0 @@
-types:
-  CsrfToken:
-    fields:
-      token: String
-queries:
-  readCsrfToken: 
-    type: '[CsrfToken]'
-    resolver: [ 'ReadCsrfTokenResolver', 'resolveCsrfToken' ]

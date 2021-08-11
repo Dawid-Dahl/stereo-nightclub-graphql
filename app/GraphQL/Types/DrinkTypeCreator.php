@@ -13,7 +13,7 @@ class DrinkTypeCreator extends TypeCreator
     {
         return [
             'name' => 'drink',
-            'description' => 'Add a description...'
+            'description' => 'Drinks from Stereo Nightclub'
         ];
     }
 

@@ -8,10 +8,12 @@ SilverStripe\GraphQL\Manager:
             types:
                 drink: 'SilverStripe\StereoNightclub\GraphQL\DrinkTypeCreator'
                 ingredient: 'SilverStripe\StereoNightclub\GraphQL\IngredientTypeCreator'
+                csrfToken: 'SilverStripe\StereoNightclub\GraphQL\CsrfTokenTypeCreator'
             queries:
                 readDrink: 'SilverStripe\StereoNightclub\GraphQL\ReadDrinkQueryCreator'
                 readDrinks: 'SilverStripe\StereoNightclub\GraphQL\ReadDrinksQueryCreator'
                 readIngredients: 'SilverStripe\StereoNightclub\GraphQL\ReadIngredientsQueryCreator'
+                readCsrfToken: 'SilverStripe\StereoNightclub\GraphQL\ReadCsrfTokenQueryCreator'
 
 SilverStripe\GraphQL\Controller:
     cors:

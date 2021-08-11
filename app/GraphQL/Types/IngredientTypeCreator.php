@@ -11,7 +11,7 @@ class IngredientTypeCreator extends TypeCreator
     {
         return [
             'name' => 'ingredient',
-            'description' => 'Add a description...'
+            'description' => 'Ingredients for Stereo Nightclub drinks'
         ];
     }
 

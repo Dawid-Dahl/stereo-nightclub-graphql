@@ -1,0 +1,3 @@
+CsrfToken:
+  fields:
+    token: String

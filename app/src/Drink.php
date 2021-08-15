@@ -34,6 +34,13 @@ class Drink extends DataObject
 
     private static $table_name = "Drink";
 
+    private static $summary_fields = [
+        'Title' => 'Title',
+        'Description' => 'Description',
+        'Price' => 'Price',
+        'Created' => 'Created',
+    ];
+
     public function getCMSfields()
     {
         $fields = FieldList::create(TabSet::create("Root"));
